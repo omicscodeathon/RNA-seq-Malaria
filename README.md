@@ -1,4 +1,5 @@
 # Dual RNA-Seq in a Malaria Co-infection Bacteremia
+#### ASBCB Omics Codeathon team: Lead/Technical: Lambert Nzungize, - Co-Lead/Technical: Kengne Ouafo Jonas Arnaud - Writers: Rissy Makhokha, Peter Kimani, Ken Mugambi
 ## 1.	Introduction 
 * What is coinfection of Malaria with bacteremia?
 *	What's to exist problem?
@@ -24,7 +25,7 @@
 *	Unique signature patterns in the group of coinfection   
 ## 6. Reference
 
-## 8. Team Members
+## 7. Team Members
 * [Nzungize Lambert](https://github.com/nzungizelab), nzulapa@gmail.com
 
 * [Arnaud Kengne-Ouafo](https://github.com/JAKO-waccbip), jakengne@gmail.com
