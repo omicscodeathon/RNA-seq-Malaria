@@ -42,6 +42,8 @@ In the sub-Saharan Africa, a majority of childhood illness and motality are caus
 *	Unique signature patterns in the group of coinfection   
 ## 6. Reference
 
+Scott, J. A., Berkley, J. A., Mwangi, I., Ochola, L., Uyoga, S., Macharia, A., Ndila, C., Lowe, B. S., Mwarumba, S., Bauni, E., Marsh, K., & Williams, T. N. (2011). Relation between falciparum malaria and bacteraemia in Kenyan children: a population-based, case-control study and a longitudinal study. Lancet (London, England), 378(9799), 1316–1323. https://doi.org/10.1016/S0140-6736(11)60888-X
+
 ## 7. Team Members
 * [Nzungize Lambert](https://github.com/nzungizelab), nzulapa@gmail.com
 
