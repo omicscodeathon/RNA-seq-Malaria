@@ -29,12 +29,12 @@
 
 
 ## 8. Contributors
-[Nzungize Lambert](https://github.com/nzungizelab)
+* [Nzungize Lambert](https://github.com/nzungizelab)
 
-[Arnaud Kengne-Ouafo](https://github.com/JAKO-waccbip)
+* [Arnaud Kengne-Ouafo](https://github.com/JAKO-waccbip)
 
-[Rissy Makhokha](https://github.com/Rissy2021)
+* [Rissy Makhokha](https://github.com/Rissy2021)
 
-[Ken Murithi](https://github.com/kenmurithi)
+* [Ken Murithi](https://github.com/kenmurithi)
 
 
