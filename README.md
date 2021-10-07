@@ -36,4 +36,7 @@ Malaria strongly predisposes children in malaria endemic zones to bacteremia. Th
 
 * [Ken Murithi](https://github.com/kenmurithi), kenmurithi522@gmail.com
 
+* [Peter Kimani](https://github.com/PMuchina), kimanimuchina@gmail.com
+
+
 
