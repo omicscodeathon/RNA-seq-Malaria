@@ -24,11 +24,7 @@
 *	Unique signature patterns in the group of coinfection   
 ## 6. Reference
 
-## 7. Team Members
-
-
-
-## 8. Contributors
+## 8. Team Members
 * [Nzungize Lambert](https://github.com/nzungizelab), nzulapa@gmail.com
 
 * [Arnaud Kengne-Ouafo](https://github.com/JAKO-waccbip), jakengne@gmail.com
