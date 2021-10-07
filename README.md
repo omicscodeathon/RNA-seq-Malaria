@@ -28,7 +28,9 @@
 
 
 
-Name, affiliation  and email
+## 8. Contributors
+[Nzungize Lambert](https://github.com/nzungizelab)
 
+[Ken Murithi](https://github.com/kenmurithi)
 
 
