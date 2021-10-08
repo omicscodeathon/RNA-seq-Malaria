@@ -2,8 +2,6 @@
 #### ASBCB Omics Codeathon team: Lead/Technical: Lambert Nzungize, - Co-Lead/Technical: Kengne Ouafo Jonas Arnaud - Writers: Rissy Makhokha, Peter Kimani, Ken Mugambi
 ## 1.	Introduction 
 
-![](https://static.independent.co.uk/2021/09/22/23/%C3%81FRICA-MALARIA_79164.jpg?width=990&auto=webp&quality=75)
-
 In the sub-Saharan Africa, a majority of childhood illness and motality are caused by invasive bacterial diseases. Malnutrition, sickle-cell disease and HIV infection are some of the contributory risk factors.Geograpical and seasonal variation of malaria and bacterial diseases, has led to scientific suggestions that malaria strongly predisposes children in malaria endemic zones to bacteremia. The clinical diagnosis of malaria and bacteremia infections is however a challenge to the clinicians due to the overlapping of the symptoms. There is a potential risk of misdiagnosis. Next-generation RNA sequencing hold a great promise in providing a sensitive method for global gene expression analysis. Differential gene expression analysis could differentiate the etiologies of febrile children if is either malaria or bacteremia. Ultimately, a unique biomarker signature for  patients co-infected with malaria and bacteremia could be derived.In this case, dual RNA-seq quantifies RNA transcripts of blood for patients co-infected with malaria and bacteremia.
 
 #### Research Question
