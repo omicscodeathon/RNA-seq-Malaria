@@ -1,6 +1,8 @@
 # Dual RNA-Seq in a Malaria Co-infection Bacteremia
 
-![image](https://files.slack.com/files-pri/T01PEU2K2DU-F02H6N07W74/image.png)
+
+![](https://files.slack.com/files-pri/T01PEU2K2DU-F02H6N07W74/image.png)
+
 
 ## 1.	Background
 
