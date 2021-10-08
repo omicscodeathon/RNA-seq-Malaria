@@ -49,9 +49,9 @@ Scott, J. A., Berkley, J. A., Mwangi, I., Ochola, L., Uyoga, S., Macharia, A., N
 
 * [Rissy Makhokha](https://github.com/Rissy2021), African institute of Biomedical science and technology(AiBST), Harare, Zimbabwerissymak@gmail.com
 
-* [Ken Murithi](https://github.com/kenmurithi), International Center of Insect Physiology and Ecology, kenmurithi522@gmail.com
+* [Ken Murithi](https://github.com/kenmurithi), International Center of Insect Physiology and Ecology, Nairobi, Kenya kenmurithi522@gmail.com
 
-* [Peter Kimani](https://github.com/PMuchina), International Center of Insect Physiology and Ecology, kimanimuchina@gmail.com
+* [Peter Kimani](https://github.com/PMuchina), International Center of Insect Physiology and Ecology, Nairobi, Kenya kimanimuchina@gmail.com
 
 
 
