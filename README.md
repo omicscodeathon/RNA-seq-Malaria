@@ -1,5 +1,5 @@
 # Dual RNA-Seq in a Malaria Co-infection Bacteremia
-## 1.	Introduction 
+## 1.	Background
 
 **What is the current problem?**
 
