@@ -1,18 +1,26 @@
 # Dual RNA-Seq in a Malaria Co-infection Bacteremia
 ## 1.	Introduction 
 
+**What is the current problem?**
 
+The clinical diagnosis and distinction between malaria and bacteraemia is a challenge to clinicians due to their overlapping symptoms. This causes a potential risk of misdiagnosis and in turn inappropriate treatment therapy provision or death.
 
-**Research Question**
+**What tools are currently used to distinguish the two?**
 
-* What is coinfection of Malaria with bacteremia?
-*	What's to exist problem?
-*	How should we solve it through RNA seq data analysis?
-* What does dual RNA seq Do?
+* Use of clinical indicators, such as bivariate and multivariate regression analyses
+* Triage classification and grouping of severe infections based on Point of care rapid diagnostic test (RDT) results
+* Implementation of available clinical guidelines on case-by-case management
+* Risk assessment biomarker usage 
+* clinical-based algorithms adoption
 
-**Main Objective**
+**What are we proposing**
 
-Use dual RNA seq data of blood from infected patients to identify a unique biomarker signature for patients co-infected with malaria and bacteremia.
+We propose use of dual RNA-seq to quantify RNA transcripts of blood from patients co-infected with malaria and bacteraemia. 
+
+**To achieve this we ought to:**
+1. Use of Next generation sequencing to provide a more sensitive, specific and accurate method for the etiologic distinction of malaria and bacteraemia
+2. Use differential gene expression analysis profiles to identify unique signatures between patients co-infected with malaria and bacteraemia 
+3.	Determine the synergistic pathways involved
 
 **The targets**
 
