@@ -43,15 +43,15 @@ In the sub-Saharan Africa, a majority of childhood illness and motality are caus
 Scott, J. A., Berkley, J. A., Mwangi, I., Ochola, L., Uyoga, S., Macharia, A., Ndila, C., Lowe, B. S., Mwarumba, S., Bauni, E., Marsh, K., & Williams, T. N. (2011). Relation between falciparum malaria and bacteraemia in Kenyan children: a population-based, case-control study and a longitudinal study. Lancet (London, England), 378(9799), 1316–1323. https://doi.org/10.1016/S0140-6736(11)60888-X
 
 ## 7. Team Members
-* [Nzungize Lambert](https://github.com/nzungizelab), nzulapa@gmail.com
+* [Nzungize Lambert](https://github.com/nzungizelab), Centre for Research in Infectious Diseases (CRID/LSTM), nzulapa@gmail.com
 
-* [Arnaud Kengne-Ouafo](https://github.com/JAKO-waccbip), jakengne@gmail.com
+* [Arnaud Kengne-Ouafo](https://github.com/JAKO-waccbip), Centre for Research in infectious diseases (CRID), yaoundé, Cameroon, jakengne@gmail.com
 
-* [Rissy Makhokha](https://github.com/Rissy2021), rissymak@gmail.com
+* [Rissy Makhokha](https://github.com/Rissy2021), African institute of Biomedical science and technology(AiBST), Harare, Zimbabwerissymak@gmail.com
 
-* [Ken Murithi](https://github.com/kenmurithi), kenmurithi522@gmail.com
+* [Ken Murithi](https://github.com/kenmurithi), International Center of Insect Physiology and Ecology, kenmurithi522@gmail.com
 
-* [Peter Kimani](https://github.com/PMuchina), kimanimuchina@gmail.com
+* [Peter Kimani](https://github.com/PMuchina), International Center of Insect Physiology and Ecology, kimanimuchina@gmail.com
 
 
 
