@@ -1,6 +1,6 @@
 # Dual RNA-Seq in a Malaria Co-infection Bacteremia
 
-<p align="center"><img src="Images/mosquitoes.png" alt="Pipeline" width="2000" height="800"></p>
+<p align="center"><img src="Images/mosquitoes.png" alt="Coinfection" width="200" height="80"></p>
 
 
 
