@@ -1,4 +1,9 @@
 # Dual RNA-Seq in a Malaria Co-infection Bacteremia
+
+<p align="center"><img src="Images/mosquitoes.png" alt="Coinfection" width="1000" height="500"></p>
+
+
+
 ## 1.	Background
 
 **What is the current problem?**
