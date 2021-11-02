@@ -1,50 +1,37 @@
-# Dual RNA-Seq in a Malaria Co-infection Bacteremia
-
-<p align="center"><img src="Images/MABACTAD.png" alt="Coinfection" width="1000" height="500"></p>
-
-
+# Dual RNA-Seq in a Malaria Co-infection Viremia
 
 ## 1.	Background
 
 **What is the current problem?**
 
-The clinical diagnosis and distinction between malaria and bacteraemia is a challenge to clinicians due to their overlapping symptoms. This causes a potential risk of misdiagnosis and in turn inappropriate treatment therapy provision or death.
+The clinical diagnosis and distinction between malaria and viremia is a challenge to clinicians due to their overlapping symptoms. This causes a potential risk of misdiagnosis and in turn inappropriate treatment therapy provision or death
 
 **What tools are currently used to distinguish the two?**
 
 * Use of clinical indicators, such as bivariate and multivariate regression analyses
 * Triage classification and grouping of severe infections based on Point of care rapid diagnostic test (RDT) results
 * Implementation of available clinical guidelines on case-by-case management
-* Risk assessment biomarker usage 
-* clinical-based algorithms adoption
+* Risk assessment biomarker 
+* clinical-based algorithms 
 
 **What are we proposing**
 
-We propose use of dual RNA-seq to quantify RNA transcripts of blood from patients co-infected with malaria and bacteraemia. 
+We propose use of dual RNA-seq to quantify RNA transcripts of blood from patients co-infected with malaria and Viremia. 
 
 **To achieve this we ought to:**
-1. Use of Next generation sequencing to provide a more sensitive, specific and accurate method for the etiologic distinction of malaria and bacteraemia
-2. Use differential gene expression analysis profiles to identify unique signatures between patients co-infected with malaria and bacteraemia 
+1. Use of Next generation sequencing to provide a more sensitive, specific and accurate method for the etiologic distinction of malaria and viremia
+2. Use differential gene expression analysis profiles to identify unique signatures between patients co-infected with malaria and viremia 
 3.	Determine the synergistic pathways involved
 
-**The targets**
+**Targets | Data Collection**
 
-![image](https://user-images.githubusercontent.com/59683723/136564329-e7d964c9-e75c-4657-9ccf-56305f3b7c90.png)
+![image](https://user-images.githubusercontent.com/59683723/139824038-98fdf324-29ea-4ded-90f7-ef58df3ec302.png)
 
 
 ##### 
 
-## 2. Workflow of the project 
-
-![image](https://user-images.githubusercontent.com/59683723/136552486-1f439d4a-fa42-49bf-b55f-6aedae6eddc0.png)
-
-
-**Workflow Tools**
-
-
-![image](https://user-images.githubusercontent.com/59683723/136560705-8d2ee026-2a2d-4120-8e85-0811e55aa016.png)
-
-
+## 2. Tools | Workflow of the project 
+![image](https://user-images.githubusercontent.com/59683723/139823262-7fd831ef-39b8-40ab-9594-80cdef1de2fc.png)
 
  **Source of datasets**
   - [GEO ](https://www.ncbi.nlm.nih.gov/geo/): public data repository for storing high throughput gene expression data and hybridization arrays, chips, microarrays
@@ -56,7 +43,7 @@ We propose use of dual RNA-seq to quantify RNA transcripts of blood from patient
 
 
 ## 3. Team Members
-* [Nzungize Lambert](https://github.com/nzungizelab), Centre for Research in Infectious Diseases (CRID/LSTM), nzulapa@gmail.com
+* [Nzungize Lambert](https://github.com/nzungizelab), Centre for Research in Infectious Diseases (CRID/LSTM), nzulapa@outlook.com
 
 * [Arnaud Kengne-Ouafo](https://github.com/JAKO-waccbip), Centre for Research in infectious diseases (CRID), yaoundé, Cameroon, jakengne@gmail.com
 
