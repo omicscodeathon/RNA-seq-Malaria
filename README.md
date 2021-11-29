@@ -1,27 +1,27 @@
-# Dual RNA-Seq in a Malaria Co-infection Viremia
+# Transcriptional profiles analysis of children infected with COVID-19 and malaria infection reveals potential biomarkers
 
 ## 1.	Background
 
 **What is the current problem?**
 
-The clinical diagnosis and distinction between malaria and viremia is a challenge to clinicians due to their overlapping symptoms. This causes a potential risk of misdiagnosis and in turn inappropriate treatment therapy provision or death
+The clinical diagnosis and distinction between malaria and COVID-19 is a challenge to clinicians due to their overlapping symptoms. This causes a potential risk of misdiagnosis and in turn inappropriate treatment therapy provision or death.
 
 **What tools are currently used to distinguish the two?**
 
-* Use of clinical indicators, such as bivariate and multivariate regression analyses
-* Triage classification and grouping of severe infections based on Point of care rapid diagnostic test (RDT) results
-* Implementation of available clinical guidelines on case-by-case management
-* Risk assessment biomarker 
-* clinical-based algorithms 
+* Use of clinical indicators, such as bivariate and multivariate regression analyses.
+* Triage classification and grouping of severe infections based on Point of care rapid diagnostic test (RDT) results.
+* Implementation of available clinical guidelines on case-by-case management.
+* Risk assessment biomarker.
+* Clinical-based algorithms. 
 
 **What are we proposing**
 
-We propose use of dual RNA-seq to quantify RNA transcripts of blood from patients co-infected with malaria and Viremia. 
+We use public datasets of RNA-seq data to quantify RNA transcripts of blood from patients with malaria and COVID-19 infection. 
 
 **To achieve this we ought to:**
-1. Use of Next generation sequencing to provide a more sensitive, specific and accurate method for the etiologic distinction of malaria and viremia
-2. Use differential gene expression analysis profiles to identify unique signatures between patients co-infected with malaria and viremia 
-3.	Determine the synergistic pathways involved
+1. Use of Next generation sequencing data which provide a more sensitive, specific and accurate method for the etiologic distinction of malaria and COVID-19.
+2. Use differential gene expression analysis profiles to identify unique signatures between children patients with malaria and COVID-19. 
+3. Determine the common genes differentially expressed between malaria and COVID-19 diseases.
 
 **Targets | Data Collection**
 
