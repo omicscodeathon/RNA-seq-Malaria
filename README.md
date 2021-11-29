@@ -25,7 +25,7 @@ We use public datasets of RNA-seq data to quantify RNA transcripts of blood from
 
 **Targets | Data Collection**
 
-![image](https://user-images.githubusercontent.com/59683723/139824038-98fdf324-29ea-4ded-90f7-ef58df3ec302.png)
+![image](https://github.com/omicscodeathon/RNA-seq-Malaria/blob/main/Images/Datasets%20collection.png)
 
 
 ##### 
