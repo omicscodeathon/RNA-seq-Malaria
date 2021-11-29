@@ -31,7 +31,7 @@ We use public datasets of RNA-seq data to quantify RNA transcripts of blood from
 ##### 
 
 ## 2. Tools | Workflow of the project 
-![image](https://user-images.githubusercontent.com/59683723/139823262-7fd831ef-39b8-40ab-9594-80cdef1de2fc.png)
+![image](https://github.com/omicscodeathon/RNA-seq-Malaria/blob/main/Images/workflow.png)
 
  **Source of datasets**
   - [GEO ](https://www.ncbi.nlm.nih.gov/geo/): public data repository for storing high throughput gene expression data and hybridization arrays, chips, microarrays
