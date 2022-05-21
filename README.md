@@ -133,9 +133,9 @@ sudo ../subread-2.0.1-Linux-x86_64/bin/subread-align -t 0 -T 16 -i ../3.ref_geno
 
 **a for loop for mapping**
 
-`cd /home/user/my_shared_data_folder/4.trimming
+cd /home/user/my_shared_data_folder/4.trimming
 for i in `ls -1 *_1_paired.fastq.gz | sed 's/\_1_paired.fastq.gz//'`; do echo ${i};
-sudo ../subread-2.0.1-Linux-x86_64/bin/subread-align -t 0 -T 16 -i ../3.ref_genome/index/GRCh38_indexed -r ${i}_1_paired.fastq.gz -R ${i}_2_paired.fastq.gz -o ../5.alignment/${i}.bam; echo "${i} is done"; done > /dev/null 2>&1 &`
+sudo ../subread-2.0.1-Linux-x86_64/bin/subread-align -t 0 -T 16 -i ../3.ref_genome/index/GRCh38_indexed -r ${i}_1_paired.fastq.gz -R ${i}_2_paired.fastq.gz -o ../5.alignment/${i}.bam; echo "${i} is done"; done > /dev/null 2>&1 &
 
 
 
