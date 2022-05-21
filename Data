@@ -6,6 +6,39 @@ https://www.ebi.ac.uk/ena/browser/view/PRJEB33892?show=reads
 #children with COVID-19 infection 
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178388
 
+#covid1
+SRR14853569_1.fastq.gz 
+SRR14853569_2.fastq.gz
+
+# covid2
+SRR14853573_1.fastq.gz
+SRR14853573_2.fastq.gz 
+
+#covid3
+SRR14853576_1.fastq.gz 
+SRR14853576_2.fastq.gz
+
+#covid4
+SRR14853580_1.fastq.gz 
+SRR14853580_1.fastq.gz
+
+#covid4.1
+SRR14853583_1.fastq.gz 
+SRR14853583_2.fastq.gz
+
+# covid5
+SRR14853585_1.fastq.gz 
+SRR14853585_2.fastq.gz
+
+#covid6
+SRR14853589_1.fastq.gz 
+SRR14853589_2.fastq.gz
+
+#covid7
+SRR14853590_1.fastq.gz 
+SRR14853590_2.fastq.gz
+
+
 #Samples used as control:
 477a age 6.5yrs Female
 
@@ -13,7 +46,25 @@ https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178388
 
 396a age 7.0 yrs Male
 
-
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178388
 
+
+#Paediatrics covid  samples
+https://www.ebi.ac.uk/ena/browser/view/PRJNA738854?show=reads
+
+#control 
+SRR14853607_1.fastq.gz  
+SRR14853607_2.fastq.gz
+
+#control2
+SRR14853601_1.fastq.gz  
+SRR14853601_2.fastq.gz
+
+# control 
+SRR14853607_1.fastq.gz 
+SRR14853607_2.fastq.gz
+
+# control2
+SRR14853601_1.fastq.gz 
+SRR14853601_2.fastq.gz
 
