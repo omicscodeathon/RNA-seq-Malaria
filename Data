@@ -6,7 +6,14 @@ https://www.ebi.ac.uk/ena/browser/view/PRJEB33892?show=reads
 #children with COVID-19 infection 
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178388
 
-#control
+#Samples used as control:
+477a age 6.5yrs Female
+
+475a age 6.2 Male 
+
+396a age 7.0 yrs Male
+
+
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178388
 
 
