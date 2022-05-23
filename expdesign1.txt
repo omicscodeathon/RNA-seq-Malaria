@@ -1,0 +1,14 @@
+sample	condition status
+control1 Healthy  patient
+control2 Healthy  patient
+Covid1	COVID19  patient
+Covid2	COVID19  patient
+Covid3	COVID19  patient
+Covid4	COVID19  patient
+Covid5	COVID19  patient
+malaria1 Malaria  patient
+malaria2 Malaria  patient
+malaria3 Malaria  patient
+malaria4 Malaria  patient
+malaria5 Malaria  patient
+malaria6 Malaria  patient
