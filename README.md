@@ -33,7 +33,17 @@ We use public datasets of RNA-seq data to quantify RNA transcripts of blood from
 ## 2. Tools | Workflow of the project 
 ![image](https://github.com/omicscodeathon/RNA-seq-Malaria/blob/main/Images/workflow.png)
 
- **Source of datasets**
+
+**Required tool per stage of analysis (we will use RNA seq data (pair end)**
+1. Downloading datasets: `wget`
+2. Quality control : `FastQc `or Trim_Galore tool (Linux OS, MAC)
+3. Trimming : `Trimmomatic` Prinseq tool (Linux OS,  MAC)
+4. Mapping :  `Subread` , `hisat2` or Kallisto tool (Linux OS,  MAC)
+5. Counting : `Subread`, FeatureCount tool (Linux OS,  MAC)
+6. Differential expression analysis : `EdgeR`, Sleuth or DSEq2 (Linux OS, Window)
+7. Gene Ontology : `GO`  
+
+**Source of datasets**
   - [GEO ](https://www.ncbi.nlm.nih.gov/geo/): public data repository for storing high throughput gene expression data and hybridization arrays, chips, microarrays
   - [Array-express](https://www.ebi.ac.uk/arrayexpress/):  public repository for microarray-based gene expression data
   - [ENCODE](https://www.encodeproject.org/): public research consortium that contains a list of functional elements in the human genome
@@ -44,8 +54,7 @@ We use public datasets of RNA-seq data to quantify RNA transcripts of blood from
 
 ## 5.Download the RNA-seq data
 
- Download the RNA-seq data multiple link using `wget` command
- 
+ Download the RNA-seq data multiple link using `wget` command (i.e children with COVID-19) 
 Create a `.txt` file, contain all link you want to download :
 
 `ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR148/069/SRR14853569/SRR14853569_1.fastq.gz
@@ -70,9 +79,6 @@ Run the command : ` sudo wget -c -b -i children_covid.txt`
 
 **Download ref. genome**
 
- `sudo wget http://ftp.ensembl.org/pub/release-104/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.alt.fa.gz
-`
-
  `sudo wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_28/GRCh38.primary_assembly.genome.fa.gz`
  
 
@@ -81,6 +87,14 @@ Run the command : ` sudo wget -c -b -i children_covid.txt`
  `sudo wget http://ftp.ensembl.org/pub/release-104/gtf/homo_sapiens/Homo_sapiens.GRCh38.104.gtf.gz
 `
 
+
+Download ref genome
+Transcript
+ sudo wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_rna.fna.gz
+genome
+ sudo wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_genomic.fna.gz
+GFF file Homo sapiens
+sudo wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_genomic.gff.gz
 
 
 ## 5.Tools used
@@ -145,12 +159,83 @@ List of splice sites in the reference genome (Extracting splice sites from a GTF
 Unzip the gtf file
 
 `$: sudo gzip -d 3.ref_genome/GRCh38.genome.gff.gz > /dev/null 2>&1 &
+`
+
+`
 $/ sudo hisat2_extract_splice_sites.py 3.ref_genome/GRCh38.genome.gff > GRCh38.genome_splicesites.txt > /dev/null 2>&1 &
 `
 
-Check the output file by running: output can be in `.tsv, .txt or .ss` format
+**Check the output file by running: output can be in `.tsv, .txt or .ss` format**
 
 `cat GRCh38.genome_splicesites.txt | head`
+
+
+
+**List of exons in reference genome can also be created**
+
+
+`hisat2_extract_exons.py ~/RNAseq_Weedall/2.Ref_genome/Anopheles-funestusFUMOZ_BASEFEATURES_AfunF3.gtf > Anopheles_AfunF3_exons.tsv
+`
+
+
+`hisat2-build -p 8 --ss Anopleles_AfunF3_splicesites.txt --exon Anopheles_AfunF3_exons.tsv
+~/RNAseq_Weedall/2.Ref_genome/Anopheles-funestus-FUMOZ_CHROMOSOMES_AfunF3.fa
+AfunF3_splice_exon_indexed`
+
+
+**Mapping #output is `bam` file**
+
+`hisat2 -x ~/RNAseq_Weedall/5.Alignment/index/Anopheles_AfunF3_indexed --known-splicesiteinfile ~/RNAseq_Weedall/5.Alignment/Splice_junction/Anopheles_AfunF3_splicesites.txt -p 2 -1
+~/RNAseq_Weedall/1.Raw_data/CMR-PER-1_R1.fastq.gz -2 ~/RNAseq_Weedall/1.Raw_data/
+CMR-PER-1_R2.fastq.gz | samtools view -bSo CMR-PER-1.bam`
+
+
+
+**Create `count.txt` with FeatureCount tool**
+
+`Cd user@malaria-rnaseq:~/my_shared_data_folder/6.count$ 
+`
+
+`sudo  ../subread-2.0.1-Linux-x86_64/bin/featureCounts -p -t exon -g gene_id -T 16 -a ../3.ref_genome/Homo_sapiens.GRCh38.104.gtf -o counts.txt ../5.alignment
+/cont1.bam ../5.alignment/mal1.bam ../5.alignment/mal2.bam ../5.alignment/mal3.bam ../5.alignment/mal4.bam`
+
+
+`user@malaria-rnaseq:~/my_shared_data_folder/6.count$ sudo ../subread-2.0.1-Linux-x86_64/bin/featureCounts -p -t exon -g gene_id -T 16 -a ../3.ref_genome/Homo_sapiens.GRCh38.104.gtf -o counts.txt ../5.alignment/
+cont1.bam ../5.alignment/cont3.bam ../5.alignment/cov1.bam ../5.alignment/cov2.bam ../5.alignment/cov4.bam ../5.alignment/mal1.bam ../5.alignment/mal2.bam ../5.alignment/mal3.bam ../5.alignment/mal4.bam ../5.alignment/mal5.bam ../5.alignment/mal6.bam
+`
+
+
+**Create matrix**
+
+`(base) lambert@lambert-Satellite-C600:~/RNA_children_covid_Malaria$
+cat counts.txt | grep -v "^#" | cut -f1,7,8,9,10,11,12 | sed '1d' | sed '1i\Geneid\tcont1\tcont2\tcont3\tcov1\tcov2\tcov4\tcov7\tcov8\tmal1\tmal2\tmal3\tmal4\tmal5\tmal6' > counts.matrix`
+
+*Note*: remember to increase the numbers of column according to the number of samples
+
+`cat counts.txt | grep -v "^#" | cut -f1,7,8,9,10,11,12,13,14,15,16,17,18,19,20 | sed '1d' | sed '1i\Geneid\tcont1\tcont2\tcont3\tcov1\tcov2\tcov4\tcov7\tcov8\tmal1\tmal2\tmal3\tmal4\tmal5\tmal6' > counts.matrix1
+`
+
+
+**Check the matrix created**
+
+`head  counts.matrix | column -t`
+
+`head  counts.matrix1 | column -t`
+
+
+**Rename `counts.matrix`**
+
+`cat counts.matrix1 | sed "1 s/cont1/control1/" | sed "1 s/cont2/control2/" |sed "1 s/cont3/control3/" | sed "1 s/cov1/covid1/" |sed "1 s/cov2/covid2/" | sed "1 s/cov4/covid3/" |sed "1 s/cov7/covid4/" | sed "1 s/cov8/covid5/" |sed "1 s/mal1/malaria1/" | sed "1 s/mal2/malaria2/" |sed "1 s/mal3/malaria3/" | sed "1 s/mal4/malaria4/" |sed "1 s/mal5/malaria5/" | sed "1 s/mal6/malaria6/" > counts.matrix1.renamed`
+
+#cont1 to control1, 
+#cont2 to control2,
+#cont3 to control3, 
+#cov1 to covid1,
+#cov2 to covid2,
+#cov4 to covid3,
+#cov7 to covid4,
+#cov8 to covid5,
+
 
 
 
