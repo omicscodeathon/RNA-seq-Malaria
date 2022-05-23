@@ -138,6 +138,20 @@ for i in `ls -1 *_1_paired.fastq.gz | sed 's/\_1_paired.fastq.gz//'`; do echo ${
 sudo ../subread-2.0.1-Linux-x86_64/bin/subread-align -t 0 -T 16 -i ../3.ref_genome/index/GRCh38_indexed -r ${i}_1_paired.fastq.gz -R ${i}_2_paired.fastq.gz -o ../5.alignment/${i}.bam; echo "${i} is done"; done > /dev/null 2>&1 &
 
 
+**Alignment**
+
+List of splice sites in the reference genome (Extracting splice sites from a GTF annotation file)
+
+Unzip the gtf file
+
+`$: sudo gzip -d 3.ref_genome/GRCh38.genome.gff.gz > /dev/null 2>&1 &
+$/ sudo hisat2_extract_splice_sites.py 3.ref_genome/GRCh38.genome.gff > GRCh38.genome_splicesites.txt > /dev/null 2>&1 &
+`
+
+Check the output file by running: output can be in `.tsv, .txt or .ss` format
+
+`cat GRCh38.genome_splicesites.txt | head`
+
 
 
 
