@@ -235,9 +235,9 @@ cat counts.matrix1 | sed "1 s/cont1/control1/" | sed "1 s/cont2/control2/" |sed 
 
 
 ## 4. Team Members
-* [Nzungize Lambert](https://github.com/nzungizelab), Liverpool School of Tropical Medicine Research Unit, Centre for Research in Infectious Diseases (CRID/LSTM),Cameroon, nzulapa@outlook.com
+* [Nzungize Lambert](https://github.com/nzungizelab), Centre for Research in Infectious Diseases (CRID/LSTM),Cameroon, nzulapa@outlook.com
 
-* [Arnaud Kengne-Ouafo](https://github.com/JAKO-waccbip), Liverpool School of Tropical Medicine Research Unit, Centre for Research in Infectious Diseases (CRID/LSTM), Cameroon, jakengne@gmail.com
+* [Arnaud Kengne-Ouafo](https://github.com/JAKO-waccbip), Centre for Research in Infectious Diseases (CRID/LSTM), Cameroon, jakengne@gmail.com
 
 * [Rissy Makhokha](https://github.com/Rissy2021), African institute of Biomedical science and technology(AiBST),Zimbabwe, rissymak@gmail.com
 
