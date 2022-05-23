@@ -225,7 +225,9 @@ cat counts.txt | grep -v "^#" | cut -f1,7,8,9,10,11,12 | sed '1d' | sed '1i\Gene
 
 **Rename `counts.matrix`**
 
-`cat counts.matrix1 | sed "1 s/cont1/control1/" | sed "1 s/cont2/control2/" |sed "1 s/cont3/control3/" | sed "1 s/cov1/covid1/" |sed "1 s/cov2/covid2/" | sed "1 s/cov4/covid3/" |sed "1 s/cov7/covid4/" | sed "1 s/cov8/covid5/" |sed "1 s/mal1/malaria1/" | sed "1 s/mal2/malaria2/" |sed "1 s/mal3/malaria3/" | sed "1 s/mal4/malaria4/" |sed "1 s/mal5/malaria5/" | sed "1 s/mal6/malaria6/" > counts.matrix1.renamed`
+```
+cat counts.matrix1 | sed "1 s/cont1/control1/" | sed "1 s/cont2/control2/" |sed "1 s/cont3/control3/" | sed "1 s/cov1/covid1/" |sed "1 s/cov2/covid2/" | sed "1 s/cov4/covid3/" |sed "1 s/cov7/covid4/" | sed "1 s/cov8/covid5/" |sed "1 s/mal1/malaria1/" | sed "1 s/mal2/malaria2/" |sed "1 s/mal3/malaria3/" | sed "1 s/mal4/malaria4/" |sed "1 s/mal5/malaria5/" | sed "1 s/mal6/malaria6/" > counts.matrix1.renamed
+```
 
 #cont1 to control1, 
 #cont2 to control2,
