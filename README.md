@@ -104,14 +104,14 @@ Check if all packages are included :
 `/subread-2.0.1-Linux-x86_64$ cd bin/`
 
 **Note**: This package contains an aligner and feature counter. (subread-align - short read aligner and featureCounts for feature counter)
-exactSNP 
-featureCounts  
-subindel  
-subjunc  
-sublong  
-subread-align  
-subread-buildindex  
-utilities
+* exactSNP 
+* featureCounts  
+* subindel  
+* subjunc  
+* sublong  
+* subread-align  
+* subread-buildindex  
+* utilities
 
 
 Link the executables into the bin/ folder
@@ -220,14 +220,14 @@ cat counts.txt | grep -v "^#" | cut -f1,7,8,9,10,11,12 | sed '1d' | sed '1i\Gene
 cat counts.matrix1 | sed "1 s/cont1/control1/" | sed "1 s/cont2/control2/" |sed "1 s/cont3/control3/" | sed "1 s/cov1/covid1/" |sed "1 s/cov2/covid2/" | sed "1 s/cov4/covid3/" |sed "1 s/cov7/covid4/" | sed "1 s/cov8/covid5/" |sed "1 s/mal1/malaria1/" | sed "1 s/mal2/malaria2/" |sed "1 s/mal3/malaria3/" | sed "1 s/mal4/malaria4/" |sed "1 s/mal5/malaria5/" | sed "1 s/mal6/malaria6/" > counts.matrix1.renamed
 ```
 
-#cont1 to control1, 
-#cont2 to control2,
-#cont3 to control3, 
-#cov1 to covid1,
-#cov2 to covid2,
-#cov4 to covid3,
-#cov7 to covid4,
-#cov8 to covid5,
+* cont1 to control1, 
+* cont2 to control2,
+* cont3 to control3, 
+* cov1 to covid1,
+* cov2 to covid2,
+* cov4 to covid3,
+* cov7 to covid4,
+* cov8 to covid5,
 
 
 
@@ -241,12 +241,11 @@ cat counts.matrix1 | sed "1 s/cont1/control1/" | sed "1 s/cont2/control2/" |sed 
 
 * [Rissy Makhokha](https://github.com/Rissy2021), African institute of Biomedical science and technology(AiBST),Zimbabwe, rissymak@gmail.com
 
+* [Umuhoza Diane](), Rwanda Agriculture and Animal Ressources Board, Rwanda, ddumuhoza@gmail.com
+
 * [Ken Murithi](https://github.com/kenmurithi), International Center of Insect Physiology and Ecology, Kenya, kenmurithi522@gmail.com
 
 * [Peter Kimani](https://github.com/PMuchina), International Center of Insect Physiology and Ecology, Kenya, kimanimuchina@gmail.com
-
-* [UMUHOZA Diane](), Rwanda Agriculture and Animal Ressources Board, Rwanda, ddumuhoza@gmail.com
-
 
 
 
