@@ -87,16 +87,6 @@ Run the command : ` sudo wget -c -b -i children_covid.txt`
  `sudo wget http://ftp.ensembl.org/pub/release-104/gtf/homo_sapiens/Homo_sapiens.GRCh38.104.gtf.gz
 `
 
-
-Download ref genome
-Transcript
- sudo wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_rna.fna.gz
-genome
- sudo wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_genomic.fna.gz
-GFF file Homo sapiens
-sudo wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_genomic.gff.gz
-
-
 ## 5.Tools used
 
 **Install subread**
@@ -135,15 +125,16 @@ Link the executables into the bin/ folder
 ` sudo ../../subread-2.0.1-Linux-x86_64/bin/subread-buildindex -o GRCh38_indexed ../GRCh38.primary_assembly.genome.fa > /dev/null 2>&1 &
 `
 
+```
 $ cd /my_shared_data_folder/3.ref_genome/index
  sudo ../../subread-2.0.1-Linux-x86_64/bin/subread-buildindex -o homo_sapiens_indexed ../Homo_sapiens.GRCh38.dna.toplevel.fa
-
+```
 
 **Mapping**
-
-`$ cd /my_shared_data_folder/5.alignment
+```
+$ cd /my_shared_data_folder/5.alignment
 sudo ../subread-2.0.1-Linux-x86_64/bin/subread-align -t 0 -T 16 -i ../3.ref_genome/index/GRCh38_indexed -r ../4.trimming/cont1_1_paired.fastq.gz -R ../4.trimming/cont1_2_paired.fastq.gz -o cont1.bam > /dev/null 2>&1 &
-`
+```
 
 **a for loop for mapping**
 ```
@@ -177,11 +168,11 @@ $/ sudo hisat2_extract_splice_sites.py 3.ref_genome/GRCh38.genome.gff > GRCh38.g
 `hisat2_extract_exons.py ~/RNAseq_Weedall/2.Ref_genome/Anopheles-funestusFUMOZ_BASEFEATURES_AfunF3.gtf > Anopheles_AfunF3_exons.tsv
 `
 
-
-`hisat2-build -p 8 --ss Anopleles_AfunF3_splicesites.txt --exon Anopheles_AfunF3_exons.tsv
+```
+hisat2-build -p 8 --ss Anopleles_AfunF3_splicesites.txt --exon Anopheles_AfunF3_exons.tsv
 ~/RNAseq_Weedall/2.Ref_genome/Anopheles-funestus-FUMOZ_CHROMOSOMES_AfunF3.fa
 AfunF3_splice_exon_indexed`
-
+```
 
 **Mapping #output is `bam` file**
 
@@ -199,10 +190,10 @@ CMR-PER-1_R2.fastq.gz | samtools view -bSo CMR-PER-1.bam`
 `sudo  ../subread-2.0.1-Linux-x86_64/bin/featureCounts -p -t exon -g gene_id -T 16 -a ../3.ref_genome/Homo_sapiens.GRCh38.104.gtf -o counts.txt ../5.alignment
 /cont1.bam ../5.alignment/mal1.bam ../5.alignment/mal2.bam ../5.alignment/mal3.bam ../5.alignment/mal4.bam`
 
-
-`user@malaria-rnaseq:~/my_shared_data_folder/6.count$ sudo ../subread-2.0.1-Linux-x86_64/bin/featureCounts -p -t exon -g gene_id -T 16 -a ../3.ref_genome/Homo_sapiens.GRCh38.104.gtf -o counts.txt ../5.alignment/
+```
+user@malaria-rnaseq:~/my_shared_data_folder/6.count$ sudo ../subread-2.0.1-Linux-x86_64/bin/featureCounts -p -t exon -g gene_id -T 16 -a ../3.ref_genome/Homo_sapiens.GRCh38.104.gtf -o counts.txt ../5.alignment/
 cont1.bam ../5.alignment/cont3.bam ../5.alignment/cov1.bam ../5.alignment/cov2.bam ../5.alignment/cov4.bam ../5.alignment/mal1.bam ../5.alignment/mal2.bam ../5.alignment/mal3.bam ../5.alignment/mal4.bam ../5.alignment/mal5.bam ../5.alignment/mal6.bam
-`
+```
 
 
 **Create matrix**
